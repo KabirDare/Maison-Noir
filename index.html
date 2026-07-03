@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Maison Noir — Contemporary Fine Dining in Mumbai</title>
+<meta name="description" content="Maison Noir is a contemporary fine dining restaurant in Mumbai, pairing classical French technique with Indian terroir. Reserve your table for an unforgettable tasting menu experience." />
+<meta name="keywords" content="fine dining Mumbai, luxury restaurant, tasting menu, chef's table, Maison Noir" />
+<meta name="author" content="Maison Noir" />
+<meta name="theme-color" content="#0b0b0c" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="restaurant.restaurant" />
+<meta property="og:title" content="Maison Noir — Contemporary Fine Dining in Mumbai" />
+<meta property="og:description" content="An ode to the art of the table. Classical French technique, Indian terroir, one tasting menu at a time." />
+<meta property="og:image" content="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=1200&q=80" />
+<meta property="og:locale" content="en_IN" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90' fill='%23c9a24b'%3EM%3C/text%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="css/style.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Maison Noir",
+  "servesCuisine": ["French", "Contemporary Indian", "Fine Dining"],
+  "priceRange": "₹₹₹₹",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "14 Altamount Road",
+    "addressLocality": "Mumbai",
+    "addressRegion": "Maharashtra",
+    "postalCode": "400026",
+    "addressCountry": "IN"
+  },
+  "telephone": "+91-22-4022-9981",
+  "acceptsReservations": "True"
+}
+</script>
+</head>
+<body>
+
+<!-- ============ LOADER ============ -->
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader__seal">
+    <svg viewBox="0 0 120 120" class="loader__ring">
+      <circle cx="60" cy="60" r="52" />
+    </svg>
+    <span class="loader__mark">M</span>
+  </div>
+  <p class="loader__label">Maison Noir</p>
+</div>
+
+<!-- ============ AMBIENT BACKGROUND ============ -->
+<div class="ambient" aria-hidden="true">
+  <span class="ambient__glow ambient__glow--one"></span>
+  <span class="ambient__glow ambient__glow--two"></span>
+  <div class="grain"></div>
+</div>
+
+<!-- ============ CUSTOM CURSOR ============ -->
+<div class="cursor" id="cursor" aria-hidden="true">
+  <div class="cursor__dot"></div>
+  <div class="cursor__ring"></div>
+</div>
+
+<!-- ============ SKIP LINK ============ -->
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ HEADER / NAV ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="site-header__inner">
+    <a href="#hero" class="brand" aria-label="Maison Noir — home">
+      <span class="brand__mark">MN</span>
+      <span class="brand__name">Maison&nbsp;Noir</span>
+    </a>
+
+    <nav class="nav" id="primaryNav" aria-label="Primary">
+      <ul class="nav__list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#chef">Chef</a></li>
+        <li><a href="#dishes">Menu</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <a href="#reservation" class="btn btn--gold btn--small nav__cta">Reserve</a>
+
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ MOBILE NAV ============ -->
+<div class="mobile-nav" id="mobileNav">
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#chef">Chef</a></li>
+    <li><a href="#dishes">Menu</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#testimonials">Testimonials</a></li>
+    <li><a href="#events">Events</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#reservation" class="btn btn--gold">Reserve a Table</a>
+</div>
+
+<main id="main">
+
+  <!-- ============ 1. HERO ============ -->
+  <section class="hero" id="hero" aria-label="Introduction">
+    <div class="hero__media">
+      <video
+        class="hero__video"
+        id="heroVideo"
+        autoplay muted loop playsinline
+        poster="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=1920&q=80">
+        <source src="https://videos.pexels.com/video-files/3195394/3195394-uhd_2560_1440_25fps.mp4" type="video/mp4" />
+      </video>
+      <div class="hero__scrim"></div>
+    </div>
+
+    <div class="hero__content">
+      <p class="eyebrow reveal-up">Mumbai · Est. 2016</p>
+      <h1 class="hero__title">
+        <span class="split-line">An Ode to the</span>
+        <span class="split-line split-line--italic">Art of the Table</span>
+      </h1>
+      <p class="hero__subtitle reveal-up">
+        Classical French technique. Indian terroir. One tasting menu, told in five courses.
+      </p>
+      <div class="hero__actions reveal-up">
+        <a href="#reservation" class="btn btn--gold">Reserve a Table</a>
+        <a href="#dishes" class="btn btn--ghost">View Tasting Menu</a>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-cue" aria-label="Scroll to content">
+      <span class="scroll-cue__line"></span>
+      <span class="scroll-cue__text">Scroll</span>
+    </a>
+  </section>
+
+  <!-- ============ THREAD DIVIDER ============ -->
+  <div class="thread" aria-hidden="true"><svg viewBox="0 0 2 100" preserveAspectRatio="none"><line x1="1" y1="0" x2="1" y2="100" /></svg></div>
+
+  <!-- ============ 2. ABOUT ============ -->
+  <section class="about section" id="about" aria-labelledby="about-heading">
+    <div class="container about__grid">
+      <div class="about__media">
+        <img class="about__img about__img--main parallax" data-speed="0.15"
+             src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80"
+             alt="Softly lit dining room at Maison Noir with candlelight and dark oak tables" loading="lazy" width="1200" height="1500" />
+        <img class="about__img about__img--accent parallax" data-speed="0.3"
+             src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80"
+             alt="Close up of a plated tasting course with microgreens and gold leaf" loading="lazy" width="800" height="900" />
+      </div>
+      <div class="about__copy">
+        <p class="eyebrow reveal-up">Our Story</p>
+        <h2 class="reveal-up" id="about-heading">A quiet room,<br />a loud conviction.</h2>
+        <p class="reveal-up">
+          Maison Noir opened on Altamount Road in 2016 with a single idea: that Mumbai deserved
+          a dining room built entirely around restraint. No spectacle, no shortcuts — just
+          classical French method applied with total devotion to the produce of this coast.
+        </p>
+        <p class="reveal-up">
+          Every plate that leaves our kitchen has been reduced, not added to. We source from
+          six family farms across Maharashtra and Kerala, work in a single seasonal menu, and
+          seat no more than thirty-two guests a night.
+        </p>
+        <div class="stat-row reveal-up">
+          <div class="stat">
+            <span class="stat__num" data-count="32">0</span>
+            <span class="stat__label">Covers per evening</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num" data-count="9">0</span>
+            <span class="stat__label">Years in service</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num" data-count="6">0</span>
+            <span class="stat__label">Partner farms</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 3. MEET THE CHEF ============ -->
+  <section class="chef section section--dark" id="chef" aria-labelledby="chef-heading">
+    <div class="container chef__grid">
+      <div class="chef__copy">
+        <p class="eyebrow reveal-up">Meet the Chef</p>
+        <h2 class="reveal-up" id="chef-heading">Vihaan&nbsp;Rao</h2>
+        <p class="chef__role reveal-up">Executive Chef &amp; Founder</p>
+        <p class="reveal-up">
+          Trained at Le Cordon Bleu Paris and seasoned across three Michelin-starred kitchens
+          in France, Chef Vihaan Rao returned to Mumbai to build a menu that speaks in his
+          mother tongue with a French accent.
+        </p>
+        <p class="reveal-up">
+          "I don't cook French food in India, and I don't cook Indian food dressed as French.
+          I cook the coast I grew up on, using the discipline I was trained in. The two were
+          never really in conflict."
+        </p>
+        <a href="#reservation" class="btn btn--outline reveal-up">Request the Chef's Table</a>
+      </div>
+      <div class="chef__media">
+        <img class="parallax" data-speed="0.2"
+             src="https://images.unsplash.com/photo-1583394293214-28ded15ee548?auto=format&fit=crop&w=1000&q=80"
+             alt="Chef Vihaan Rao plating a dish with precise focus in the Maison Noir kitchen" loading="lazy" width="1000" height="1250" />
+        <span class="chef__badge">18 Years<br />of Craft</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ THREAD DIVIDER ============ -->
+  <div class="thread" aria-hidden="true"><svg viewBox="0 0 2 100" preserveAspectRatio="none"><line x1="1" y1="0" x2="1" y2="100" /></svg></div>
+
+  <!-- ============ 4. SIGNATURE DISHES ============ -->
+  <section class="dishes section" id="dishes" aria-labelledby="dishes-heading">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow reveal-up">The Tasting Menu</p>
+        <h2 class="reveal-up" id="dishes-heading">Five Courses, One Evening</h2>
+        <p class="section-head__sub reveal-up">Served nightly. Changes with the season. Paired wines available with each course.</p>
+      </div>
+
+      <ol class="dish-list">
+        <li class="dish reveal-up">
+          <span class="dish__num">No. 01</span>
+          <div class="dish__media">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=700&q=80" alt="Smoked foie gras with fig and toasted brioche" loading="lazy" width="700" height="500" />
+          </div>
+          <div class="dish__copy">
+            <h3>Smoked Foie Gras</h3>
+            <p>Black fig, toasted brioche, aged balsamic reduction</p>
+          </div>
+        </li>
+        <li class="dish reveal-up">
+          <span class="dish__num">No. 02</span>
+          <div class="dish__media">
+            <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=700&q=80" alt="Charred Malabar prawns with saffron beurre blanc" loading="lazy" width="700" height="500" />
+          </div>
+          <div class="dish__copy">
+            <h3>Charred Malabar Prawns</h3>
+            <p>Saffron beurre blanc, coastal herb oil, lime powder</p>
+          </div>
+        </li>
+        <li class="dish reveal-up">
+          <span class="dish__num">No. 03</span>
+          <div class="dish__media">
+            <img src="https://images.unsplash.com/photo-1432139555190-58524dae6a55?auto=format&fit=crop&w=700&q=80" alt="Duck breast with beetroot and port wine jus" loading="lazy" width="700" height="500" />
+          </div>
+          <div class="dish__copy">
+            <h3>Duck Breast &amp; Beetroot</h3>
+            <p>Port wine jus, roasted heirloom beets, duck fat crumble</p>
+          </div>
+        </li>
+        <li class="dish reveal-up">
+          <span class="dish__num">No. 04</span>
+          <div class="dish__media">
+            <img src="https://images.unsplash.com/photo-1476124369491-e7addf5db371?auto=format&fit=crop&w=700&q=80" alt="Black truffle risotto with aged parmesan" loading="lazy" width="700" height="500" />
+          </div>
+          <div class="dish__copy">
+            <h3>Black Truffle Risotto</h3>
+            <p>Carnaroli rice, 24-month parmesan, fresh shaved truffle</p>
+          </div>
+        </li>
+        <li class="dish reveal-up">
+          <span class="dish__num">No. 05</span>
+          <div class="dish__media">
+            <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=700&q=80" alt="Valrhona chocolate fondant with sea salt caramel" loading="lazy" width="700" height="500" />
+          </div>
+          <div class="dish__copy">
+            <h3>Valrhona Fondant</h3>
+            <p>Sea salt caramel, cocoa nib tuile, cardamom ice cream</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ 5. FINE DINING EXPERIENCE ============ -->
+  <section class="experience section section--dark" id="experience" aria-labelledby="experience-heading">
+    <div class="experience__bg parallax" data-speed="0.1">
+      <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=1920&q=80" alt="" loading="lazy" />
+    </div>
+    <div class="container">
+      <div class="section-head section-head--center">
+        <p class="eyebrow reveal-up">The Experience</p>
+        <h2 class="reveal-up" id="experience-heading">Dining, Slowed Down</h2>
+      </div>
+
+      <div class="experience__cards">
+        <article class="glass-card reveal-up">
+          <span class="glass-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40"><path d="M20 4v32M8 12c0 6 5 8 12 8s12-2 12-8" /></svg>
+          </span>
+          <h3>The Chef's Table</h3>
+          <p>Six seats facing an open pass. Watch every course composed, narrated by the kitchen itself.</p>
+        </article>
+        <article class="glass-card reveal-up">
+          <span class="glass-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40"><circle cx="20" cy="16" r="9" /><path d="M20 25v11M13 36h14" /></svg>
+          </span>
+          <h3>Wine Pairing</h3>
+          <p>A cellar of 400 labels, curated by our sommelier to meet each course rather than overpower it.</p>
+        </article>
+        <article class="glass-card reveal-up">
+          <span class="glass-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40"><rect x="6" y="10" width="28" height="20" rx="1" /><path d="M6 16h28" /></svg>
+          </span>
+          <h3>Private Dining</h3>
+          <p>A single enclosed room for up to twelve guests, with its own tasting menu and service team.</p>
+        </article>
+        <article class="glass-card reveal-up">
+          <span class="glass-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40"><path d="M20 4l4 12h12l-10 8 4 12-10-8-10 8 4-12-10-8h12z" /></svg>
+          </span>
+          <h3>Seasonal Menu</h3>
+          <p>Four menus a year, retired the day the last ingredient runs out of season.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ THREAD DIVIDER ============ -->
+  <div class="thread" aria-hidden="true"><svg viewBox="0 0 2 100" preserveAspectRatio="none"><line x1="1" y1="0" x2="1" y2="100" /></svg></div>
+
+  <!-- ============ 6. GALLERY ============ -->
+  <section class="gallery section" id="gallery" aria-labelledby="gallery-heading">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow reveal-up">Gallery</p>
+        <h2 class="reveal-up" id="gallery-heading">Moments From the Room</h2>
+      </div>
+    </div>
+    <div class="gallery__grid">
+      <button class="gallery__item reveal-up" data-full="https://images.unsplash.com/photo-1517260911058-4fb9e2c9f37d?auto=format&fit=crop&w=1600&q=80" aria-label="Enlarge image: dining room ambiance">
+        <img src="https://images.unsplash.com/photo-1517260911058-4fb9e2c9f37d?auto=format&fit=crop&w=800&q=80" alt="Dining room ambiance with warm low lighting" loading="lazy" width="800" height="1000" />
+      </button>
+      <button class="gallery__item gallery__item--tall reveal-up" data-full="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1600&q=80" aria-label="Enlarge image: plated dessert course">
+        <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=800&q=80" alt="Elegantly plated dessert course" loading="lazy" width="800" height="1100" />
+      </button>
+      <button class="gallery__item reveal-up" data-full="https://images.unsplash.com/photo-1428515613728-6b4607e44363?auto=format&fit=crop&w=1600&q=80" aria-label="Enlarge image: wine cellar selection">
+        <img src="https://images.unsplash.com/photo-1428515613728-6b4607e44363?auto=format&fit=crop&w=800&q=80" alt="Wine glasses catching candlelight" loading="lazy" width="800" height="900" />
+      </button>
+      <button class="gallery__item reveal-up" data-full="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=1600&q=80" aria-label="Enlarge image: restaurant interior detail">
+        <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80" alt="Interior detail of the dining room's dark oak and brass fixtures" loading="lazy" width="800" height="900" />
+      </button>
+      <button class="gallery__item gallery__item--tall reveal-up" data-full="https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?auto=format&fit=crop&w=1600&q=80" aria-label="Enlarge image: chef finishing a plate">
+        <img src="https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?auto=format&fit=crop&w=800&q=80" alt="Chef finishing a plate with tweezers and garnish" loading="lazy" width="800" height="1100" />
+      </button>
+      <button class="gallery__item reveal-up" data-full="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=1600&q=80" aria-label="Enlarge image: dark moody plated dish">
+        <img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=800&q=80" alt="Dark moody plated dish with sauce work" loading="lazy" width="800" height="900" />
+      </button>
+    </div>
+  </section>
+
+  <!-- ============ 7. TESTIMONIALS ============ -->
+  <section class="testimonials section section--dark" id="testimonials" aria-labelledby="testimonials-heading">
+    <div class="container">
+      <div class="section-head section-head--center">
+        <p class="eyebrow reveal-up">Guest Words</p>
+        <h2 class="reveal-up" id="testimonials-heading">What the Room Remembers</h2>
+      </div>
+
+      <div class="testimonial-slider reveal-up" id="testimonialSlider">
+        <div class="testimonial-track" id="testimonialTrack">
+          <figure class="testimonial">
+            <blockquote>
+              <p>The most disciplined tasting menu I've had in this city. Nothing on the plate that didn't need to be there — and the duck course alone was worth the drive.</p>
+            </blockquote>
+            <figcaption>
+              <span class="testimonial__name">Meher Kapadia</span>
+              <span class="testimonial__role">Food Critic, The Mumbai Table</span>
+            </figcaption>
+          </figure>
+          <figure class="testimonial">
+            <blockquote>
+              <p>We celebrated our anniversary at the chef's table and it was the quietest, most attentive service we've experienced anywhere — including Paris.</p>
+            </blockquote>
+            <figcaption>
+              <span class="testimonial__name">Aditya &amp; Nandini Rao</span>
+              <span class="testimonial__role">Guests since 2019</span>
+            </figcaption>
+          </figure>
+          <figure class="testimonial">
+            <blockquote>
+              <p>Chef Rao's foie gras course rewired what I thought French technique could do with Indian produce. Reservations are hard to get for a reason.</p>
+            </blockquote>
+            <figcaption>
+              <span class="testimonial__name">Rohan Mehta</span>
+              <span class="testimonial__role">Sommelier &amp; Guest</span>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="testimonial-controls">
+          <button class="testimonial-btn" id="testimonialPrev" aria-label="Previous testimonial">&larr;</button>
+          <div class="testimonial-dots" id="testimonialDots"></div>
+          <button class="testimonial-btn" id="testimonialNext" aria-label="Next testimonial">&rarr;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 8. RESERVATION ============ -->
+  <section class="reservation section" id="reservation" aria-labelledby="reservation-heading">
+    <div class="container reservation__grid">
+      <div class="reservation__copy">
+        <p class="eyebrow reveal-up">Reservations</p>
+        <h2 class="reveal-up" id="reservation-heading">Book Your Evening</h2>
+        <p class="reveal-up">
+          We recommend reserving two to three weeks in advance. Parties of eight or more,
+          please write to us directly for a bespoke menu.
+        </p>
+        <ul class="reservation__meta reveal-up">
+          <li><strong>Service</strong> Tue–Sun, 7:00 PM – 11:30 PM</li>
+          <li><strong>Attire</strong> Smart formal</li>
+          <li><strong>Dietary</strong> Vegetarian &amp; allergy menus on request</li>
+        </ul>
+      </div>
+
+      <form class="reservation__form reveal-up" id="reservationForm" novalidate>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="resName">Full name</label>
+            <input type="text" id="resName" name="name" required autocomplete="name" />
+          </div>
+          <div class="form-field">
+            <label for="resPhone">Phone</label>
+            <input type="tel" id="resPhone" name="phone" required autocomplete="tel" />
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="resEmail">Email</label>
+          <input type="email" id="resEmail" name="email" required autocomplete="email" />
+        </div>
+
+        <div class="form-row">
+          <div class="form-field">
+            <label for="resDate">Date</label>
+            <input type="date" id="resDate" name="date" required />
+          </div>
+          <div class="form-field">
+            <label for="resTime">Time</label>
+            <select id="resTime" name="time" required>
+              <option value="" disabled selected>Select time</option>
+              <option>7:00 PM</option>
+              <option>7:30 PM</option>
+              <option>8:00 PM</option>
+              <option>8:30 PM</option>
+              <option>9:00 PM</option>
+              <option>9:30 PM</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="resGuests">Guests</label>
+            <select id="resGuests" name="guests" required>
+              <option value="" disabled selected>Party size</option>
+              <option>1</option><option>2</option><option>3</option><option>4</option>
+              <option>5</option><option>6</option><option>7</option><option>8+</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="resNotes">Special requests <span>(optional)</span></label>
+          <textarea id="resNotes" name="notes" rows="3"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn--gold btn--full">
+          <span class="btn__text">Confirm Reservation</span>
+        </button>
+
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ THREAD DIVIDER ============ -->
+  <div class="thread" aria-hidden="true"><svg viewBox="0 0 2 100" preserveAspectRatio="none"><line x1="1" y1="0" x2="1" y2="100" /></svg></div>
+
+  <!-- ============ 9. UPCOMING EVENTS ============ -->
+  <section class="events section section--dark" id="events" aria-labelledby="events-heading">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow reveal-up">Upcoming Events</p>
+        <h2 class="reveal-up" id="events-heading">On the Calendar</h2>
+      </div>
+
+      <div class="events__list">
+        <article class="event-card reveal-up">
+          <div class="event-card__date"><span>18</span>JUL</div>
+          <div class="event-card__body">
+            <h3>Burgundy Wine Pairing Dinner</h3>
+            <p>A five-course menu built around six vintages from Domaine Leflaive, hosted by our sommelier.</p>
+          </div>
+          <a href="#reservation" class="btn btn--outline btn--small">Reserve</a>
+        </article>
+        <article class="event-card reveal-up">
+          <div class="event-card__date"><span>02</span>AUG</div>
+          <div class="event-card__body">
+            <h3>Chef's Table: Coastal Harvest</h3>
+            <p>An eight-course counter experience celebrating monsoon produce from our Konkan partner farms.</p>
+          </div>
+          <a href="#reservation" class="btn btn--outline btn--small">Reserve</a>
+        </article>
+        <article class="event-card reveal-up">
+          <div class="event-card__date"><span>31</span>DEC</div>
+          <div class="event-card__body">
+            <h3>New Year's Eve Tasting Menu</h3>
+            <p>A nine-course celebration menu with champagne pairing, seated at 8:00 PM and 10:30 PM.</p>
+          </div>
+          <a href="#reservation" class="btn btn--outline btn--small">Reserve</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 10. CONTACT ============ -->
+  <section class="contact section" id="contact" aria-labelledby="contact-heading">
+    <div class="container contact__grid">
+      <div class="contact__copy">
+        <p class="eyebrow reveal-up">Contact</p>
+        <h2 class="reveal-up" id="contact-heading">Find Us</h2>
+        <address class="contact__details reveal-up">
+          <p>14 Altamount Road<br />Mumbai, Maharashtra 400026</p>
+          <p><a href="tel:+912240229981">+91 22 4022 9981</a></p>
+          <p><a href="mailto:reservations@maisonnoir.in">reservations@maisonnoir.in</a></p>
+        </address>
+        <div class="contact__social reveal-up" aria-label="Social media">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="Pinterest">PN</a>
+        </div>
+      </div>
+      <div class="contact__map reveal-up">
+        <iframe
+          title="Map showing Maison Noir location in Mumbai"
+          src="https://maps.google.com/maps?q=Altamount%20Road%2C%20Mumbai&t=&z=14&ie=UTF8&iwloc=&output=embed"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ 11. PREMIUM FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container site-footer__top">
+    <div class="site-footer__brand">
+      <span class="brand__mark">MN</span>
+      <span class="brand__name">Maison&nbsp;Noir</span>
+      <p>An ode to the art of the table, on Altamount Road, Mumbai.</p>
+    </div>
+
+    <nav class="site-footer__nav" aria-label="Footer">
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#chef">Chef</a></li>
+          <li><a href="#dishes">Menu</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <ul>
+          <li><a href="#reservation">Reservations</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="site-footer__newsletter">
+      <h4>Stay Informed</h4>
+      <p>Seasonal menu launches and private events, a few times a year.</p>
+      <form id="newsletterForm" class="newsletter-form">
+        <label for="newsletterEmail" class="visually-hidden">Email address</label>
+        <input type="email" id="newsletterEmail" placeholder="Your email address" required />
+        <button type="submit" aria-label="Subscribe">&rarr;</button>
+      </form>
+      <p class="form-status" id="newsletterStatus" role="status" aria-live="polite"></p>
+    </div>
+  </div>
+
+  <div class="container site-footer__bottom">
+    <p>&copy; <span id="year"></span> Maison Noir. All rights reserved.</p>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">&uarr;</button>
+  </div>
+</footer>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image preview" hidden>
+  <button class="lightbox__close" id="lightboxClose" aria-label="Close preview">&times;</button>
+  <img id="lightboxImg" src="" alt="" />
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>
